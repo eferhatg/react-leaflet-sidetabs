@@ -1,10 +1,12 @@
 # react-leaflet-sidetabs
 
-> A [react-leaflet](https://github.com/PaulLeCam/react-leaflet) plugin of [sidebar-v2](https://github.com/Turbo87/sidebar-v2)  
+> A [react-leaflet](https://github.com/PaulLeCam/react-leaflet) plugin of [sidebar-v2](https://github.com/Turbo87/sidebar-v2)  [(DEMO)](https://eferhatg.com/react-leaflet-sidetabs/)
 
 [![NPM](https://img.shields.io/npm/v/react-leaflet-sidetabs.svg)](https://www.npmjs.com/package/react-leaflet-v2sidebar-v2) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 inspired by [@condense/react-leaflet-sidebarv2](https://github.com/condense/react-leaflet-sidebarv2)
+
+[(DEMO)](https://eferhatg.com/react-leaflet-sidetabs/)
 
 ## Install
 
