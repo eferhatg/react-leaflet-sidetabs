@@ -10,6 +10,7 @@ export default class App extends Component {
     this.state = {
       collapsed: true,
       selected: 'home',
+      glowing:'search'
     };
   }
 
@@ -20,6 +21,7 @@ export default class App extends Component {
     this.setState({
       collapsed: false,
       selected: id,
+      glowing: null
     })
   }
 
@@ -38,13 +40,14 @@ export default class App extends Component {
           position="right"
           collapsed={this.state.collapsed}closeIcon={<FiChevronRight />}
           selected={this.state.selected}
+          glowing = {this.state.glowing}
           onOpen={this.onOpen.bind(this)}
           onClose={this.onClose.bind(this)}
         >
            <Tab id="home" header="Home" icon={<FiHome />}>
             <p>No place like home!</p>
            </Tab>
-           <Tab id="search" header="Search" icon={<FiSearch />}>
+           <Tab id="search" header="Search" icon={<FiSearch />} >
             <p>The noblest search is the search for excellence!</p>
            </Tab>
            <Tab id="settings" header="Settings" anchor="bottom" icon={<FiSettings />}>

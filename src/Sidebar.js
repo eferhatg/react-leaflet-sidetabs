@@ -58,6 +58,7 @@ class Sidebar extends MapComponent {
                 icon={t.props.icon}
                 disabled={t.props.disabled}
                 selected={this.props.selected}
+                glowing={this.props.glowing}
                 collapsed={this.props.collapsed}
                 onClose={this.props.onClose}
                 onOpen={this.props.onOpen} />)}
@@ -70,6 +71,7 @@ class Sidebar extends MapComponent {
                 icon={t.props.icon}
                 disabled={t.props.disabled}
                 selected={this.props.selected}
+                glowing={this.props.glowing}
                 collapsed={this.props.collapsed}
                 onClose={this.props.onClose}
                 onOpen={this.props.onOpen} />)}
@@ -88,6 +90,7 @@ Sidebar.propTypes = {
   collapsed: PropTypes.bool,
   position: PropTypes.oneOf(['left', 'right']),
   selected: PropTypes.string,
+  glowing: PropTypes.string,
   closeIcon: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   onClose: PropTypes.func,
   onOpen: PropTypes.func,
