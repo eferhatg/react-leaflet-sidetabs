@@ -2,7 +2,7 @@
 
 > A [react-leaflet](https://github.com/PaulLeCam/react-leaflet) plugin of [sidebar-v2](https://github.com/Turbo87/sidebar-v2)
 
-[![NPM](https://img.shields.io/npm/v/react-leaflet-sidetabs.svg)](https://www.npmjs.com/package/react-leaflet-sidetabs) ![npm downloads](https://img.shields.io/npm/dw/react-leaflet-sidetabs) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)[![Node.js CI](https://github.com/TA-Geoforce/react-leaflet-sidetabs/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/TA-Geoforce/react-leaflet-sidetabs/actions/workflows/node.js.yml)
+[![NPM](https://img.shields.io/npm/v/react-leaflet-sidetabs.svg)](https://www.npmjs.com/package/react-leaflet-sidetabs) ![npm downloads](https://img.shields.io/npm/dw/react-leaflet-sidetabs) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)][![Node.js CI](https://github.com/TA-Geoforce/react-leaflet-sidetabs/actions/workflows/node.js.yml/badge.svg?branch=feature%2Fupdate-repo)](https://github.com/TA-Geoforce/react-leaflet-sidetabs/actions/workflows/node.js.yml)
 
 inspired by [@condense/react-leaflet-sidebarv2](https://github.com/condense/react-leaflet-sidebarv2)
 
