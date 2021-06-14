@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { Map, TileLayer } from 'react-leaflet';
+import { MapContainer, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import { Sidebar, Tab } from 'react-leaflet-sidetabs'
+import { Tab, Sidebar } from '../../src/index.js'
+
 import { FiHome, FiChevronRight, FiSearch, FiSettings } from "react-icons/fi";
 
 export default class App extends Component {
@@ -28,13 +29,12 @@ export default class App extends Component {
   render () {
     return (
       <div>
-        <Map className="mapStyle" center={[41.09, 28.97]} zoom={7}>
+        <MapContainer className="mapStyle" center={[41.09, 28.97]} zoom={7}>
           <TileLayer
             attribution=""
             url={'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'}
           />
-        </Map>
-
+        </MapContainer>
         <Sidebar
           id="sidebar"
           position="right"
@@ -52,7 +52,7 @@ export default class App extends Component {
            </Tab>
            <Tab id="settings" header="Settings" anchor="bottom" icon={<FiSettings />}>
             <p>We don't want privacy so much as privacy settings!</p>
-           </Tab>           
+           </Tab>
         </Sidebar>
       </div>
     )

@@ -18,7 +18,8 @@ describe('MenuButton', () => {
         selected='nottest'
         collapsed={true}
         onClose={() => {}}
-        onOpen={() => {}} />
+        onOpen={() => {}}
+        glowing = ""/>
     )
     let tree = component.toJSON()
     expect(tree).toMatchSnapshot()
@@ -34,7 +35,8 @@ describe('MenuButton', () => {
         selected='test'
         collapsed={false}
         onClose={() => {}}
-        onOpen={() => {}} />
+        onOpen={() => {}}
+        glowing = ""/>
     )
     let tree = component.toJSON()
     expect(tree).toMatchSnapshot()
@@ -50,7 +52,25 @@ describe('MenuButton', () => {
         selected='test'
         collapsed={false}
         onClose={() => {}}
-        onOpen={() => {}} />
+        onOpen={() => {}}
+        glowing = ""/>
+    )
+    let tree = component.toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+
+  it('has glowing on', () => {
+    const component = renderer.create(
+      <MenuButton
+        key='test'
+        id='test'
+        icon='fa fa-home'
+        disabled={true}
+        selected='test'
+        collapsed={false}
+        onClose={() => {}}
+        onOpen={() => {}}
+        glowing = 'test'/>
     )
     let tree = component.toJSON()
     expect(tree).toMatchSnapshot()
