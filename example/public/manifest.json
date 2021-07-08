@@ -1,8 +1,0 @@
-{
-  "short_name": "react-leaflet-sidetabs",
-  "name": "react-leaflet-sidetabs",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
-}

@@ -31,26 +31,24 @@ npm install
 in the folders ```react-leaflet-sidetabs``` and ```example```.
 
 ```jsx
+/* eslint-disable */
 import React, { Component } from 'react'
-import { MapContainer, TileLayer } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import { Tab } from '../../src/index.js'
-import { Sidebar } from '../../src/index.js'
-
-import { FiHome, FiChevronRight, FiSearch, FiSettings } from "react-icons/fi";
+import { MapContainer, TileLayer } from 'react-leaflet'
+import { Tab, Sidebar } from '../src/index.js'
+import { FiHome, FiChevronRight, FiSearch, FiSettings } from "react-icons/fi"
 
 export default class App extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       collapsed: true,
       selected: 'home',
       glowing:'search'
-    };
+    }
   }
 
   onClose() {
-    this.setState({collapsed: true});
+    this.setState({collapsed: true})
   }
   onOpen(id) {
     this.setState({
@@ -86,12 +84,13 @@ export default class App extends Component {
            </Tab>
            <Tab id="settings" header="Settings" anchor="bottom" icon={<FiSettings />}>
             <p>We don't want privacy so much as privacy settings!</p>
-           </Tab>           
+           </Tab>
         </Sidebar>
       </div>
     )
   }
 }
+
 ```
 
 You can find the following example in the folder ```example```. Run the above code by executing the following scripts in package.json in the ```example``` folder, which is stated underneath:

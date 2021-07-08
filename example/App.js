@@ -1,22 +1,21 @@
+/* eslint-disable */
 import React, { Component } from 'react'
-import { MapContainer, TileLayer } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import { Tab, Sidebar } from '../../src/index.js'
-
-import { FiHome, FiChevronRight, FiSearch, FiSettings } from "react-icons/fi";
+import { MapContainer, TileLayer } from 'react-leaflet'
+import { Tab, Sidebar } from '../src/index.js'
+import { FiHome, FiChevronRight, FiSearch, FiSettings } from "react-icons/fi"
 
 export default class App extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       collapsed: true,
       selected: 'home',
       glowing:'search'
-    };
+    }
   }
 
   onClose() {
-    this.setState({collapsed: true});
+    this.setState({collapsed: true})
   }
   onOpen(id) {
     this.setState({
