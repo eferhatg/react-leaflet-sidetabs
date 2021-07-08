@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import { PropTypes } from 'prop-types'
 import Tab from './Tab'
 import MenuButton from './MenuButton'
-import './sidebar.css'
+import '../sidebar.css'
 
 const TabType = PropTypes.shape({
   type: PropTypes.oneOf([Tab])

@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { Component } from 'react'
 import { MapContainer, TileLayer } from 'react-leaflet'
-import { Tab, Sidebar } from '../src/index.js'
+import { Tab, Sidebar } from '../lib/index.js'
 import { FiHome, FiChevronRight, FiSearch, FiSettings } from "react-icons/fi"
 
 export default class App extends Component {
