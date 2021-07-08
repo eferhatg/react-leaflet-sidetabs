@@ -15,8 +15,7 @@
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "prepare": "npm run build",
-    "predeploy": "cd example && npm install && npm run build",
+    "prepare-build": "npm run build",
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
